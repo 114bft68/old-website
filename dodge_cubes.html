@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="upperBar">
+        <button class="select">Minigames</button><button class="select">About this Website</button>
+        <div style="width: calc(71vw - 12.5vh);"></div>
+        <button id="return"><img id="home" style="height: 8vh; width: 8vh;" src="home.svg"></button>
+        <div id="buttonList">
+            <button class="minigame">Tac Tac Toe</button>
+            <button class="minigame">Dodge Cubes</button>
+        </div>
+    </div>
+    <div style="transition: opacity 1s;" class="overlay">
+        <h1 style="font-size: 45px;">Luck-and-skill-based goofy ahh game</h1>
+        <hr id='hr' style="opacity: 0; transition: opacity 0.5s; width: 35vw; background-color: rgba(255, 0, 0, 0.5); border: none; height: 1px; margin-top: 10px; margin-bottom: 20px;">
+        <p id='p' style="opacity: 0; font-size: 30px; transition: opacity 1.5s;">Basically, all you need to do is dodge the moving cubes.<br>Cubes infinitely spawn</p>
+        <p id="p1" style="transition: opacity 1.5s; opacity: 0; margin-top: 30px; font-size: 15px;">Use WASD to control your cube, the cube cannot be moved with a mouse, since the cube may become Sonic the Hedgehog if you move your mouse too fast</p>
+        <br>
+        <br>
+        <p id="countdown" style="font-size: 25px; transition: opacity 0.5s;"></p>
+    </div>
+    <canvas style="display: flex; border: 1px red solid;" id="canvas"></canvas>
+</body>
+<script src="common.js"></script>
+<script src="dodgecubes.js"></script>
+</html>

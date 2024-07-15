@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="upperBar">
+        <button class="select">Minigames</button><button class="select">About this Website</button>
+        <div style="width: calc(71vw - 12.5vh);"></div>
+        <button id="return"><img id="home" style="height: 8vh; width: 8vh;" src="home.svg"></button>
+        <div id="buttonList">
+            <button class="minigame">Tac Tac Toe</button>
+            <button class="minigame">Dodge Cubes</button>
+        </div>
+    </div>
+    <svg style="height: 87.5vh; width: 100vw; padding: 0; margin: 0; position: absolute;">
+        <polyline id="polyline" fill="#bdbca8">
+    </svg>
+    <div id="text">
+        <h1 style="font-size: 65px; white-space: nowrap;">Welcome to My Website</h1>
+        <p id="id" style="margin-bottom: 5vh;">IN DEVELOPMENT</p>
+        <p id="hello" style="font-size: 30px;"></p>
+    </div>
+</body>
+<script src="common.js"></script>
+<script src="main.js"></script>
+</html>
