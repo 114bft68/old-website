@@ -24,4 +24,18 @@
 </body>
 <script src="common.js"></script>
 <script src="main.js"></script>
+<script>
+    function checkMobile() {
+        try {
+            document.createEvent('TouchEvent');
+            return true;
+        } catch {
+            return false;
+        }
+    }
+
+    if (checkMobile()) {
+        alert('\u26A0\uFE0F This website is HIGHLY MOBILE-UNFRIENDLY \u26A0\uFE0F');
+    }
+</script>
 </html>
