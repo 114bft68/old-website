@@ -18,24 +18,24 @@
     </svg>
     <div id="text">
         <h1 style="font-size: 65px; white-space: nowrap;">Welcome to My Website</h1>
-        <p id="id" style="margin-bottom: 5vh;">IN DEVELOPMENT</p>
+        <p id="id" style="margin-bottom: 5vh;">ABANDONED &#40I'm just lazy&#41</p>
         <p id="hello" style="font-size: 30px;"></p>
     </div>
-</body>
-<script src="common.js"></script>
-<script src="main.js"></script>
-<script>
-    function checkMobile() {
-        try {
-            document.createEvent('TouchEvent');
-            return true;
-        } catch {
-            return false;
+    <script src="common.js"></script>
+    <script src="main.js"></script>
+    <script>
+        function checkMobile() {
+            try {
+                document.createEvent('TouchEvent');
+                return true;
+            } catch {
+                return false;
+            }
         }
-    }
 
-    if (checkMobile()) {
-        alert('\u26A0\uFE0F This website is HIGHLY MOBILE-UNFRIENDLY \u26A0\uFE0F');
-    }
-</script>
+        if (checkMobile()) {
+            alert('\u26A0\uFE0F This website is HIGHLY MOBILE-UNFRIENDLY \u26A0\uFE0F');
+        }
+    </script>
+</body>
 </html>

@@ -1,22 +1,19 @@
-var hello;
-fetch('https://raw.githubusercontent.com/114bft68/hm10u1r3/main/useless/hello.json')
-    .then(r => {
-        return r.json();  
+let hello;
+fetch('hello.json')
+    .then((data) => {
+        return data.json();
     })
-    .then(d => {
-        hello = d;
+    .then((h) => {
+        hello = h;
     })
-    .catch(e => {
-        alert(`${e}\nPlease reload the website`);  
+    .catch((error) => {
+        alert(`Erm... ${error}`);
     })
 
 let i = ii = 0;
 let d = false;
 let h = document.getElementById("hello");
 setInterval(() => {
-    if (i === 66) {
-        i++;
-    }
     if (i > 101) {
         i = 0;
     }
@@ -38,7 +35,7 @@ setInterval(() => {
     document.getElementById("polyline").setAttribute("points", `1071,0 704,363 0,${window.innerHeight} ${window.innerWidth},${window.innerHeight} ${window.innerWidth},0`);
 }, 1);
 
-fetch('https://api.github.com/repos/114bft68/hm10u1r3')
+fetch('https://api.github.com/repos/114bft68/website')
     .then(r => {
         return r.json();
     })

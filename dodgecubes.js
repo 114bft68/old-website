@@ -97,9 +97,9 @@ function animation() {
         localStorage.setItem('played', true);
         setTimeout(() => {
             let crea = document.createElement('p');
-            crea.innerHTML = '<br><br>Click anywhere to play again';
+            crea.innerHTML = '<br><br>Click here to play again';
             cr.appendChild(crea);
-            document.addEventListener('click', () => {
+            c.addEventListener('click', () => {
                 location.reload();
             });
         }, 100);
@@ -113,7 +113,7 @@ function animation() {
     a ? x -= 5 : void(0);
     s ? y += 5 : void(0);
     d ? x += 5 : void(0);
-    x <= 0 || x + 35 >= c.width || y <= 0 || y + 35 >= c.height ? (end = true, border = true) : void(0); 
+    x <= 0 || x + 35 >= c.width || y <= 0 || y + 35 >= c.height ? end = border = true : void(0); 
 }
 
 function k(e, k, tf) {
