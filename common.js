@@ -1,6 +1,6 @@
 let n = location.pathname.split('/').at(-1).split('.html')[0];
 n = n.split('_').map((i) => i[0] = i[0].toUpperCase() + i.substring(1)).join(' ');
-document.title = (n === 'Index' ? 'Home' : n);
+document.title = n;
 
 let link = document.createElement('link');
 link.rel = 'icon';
@@ -21,7 +21,7 @@ document.querySelectorAll('.select')[1].addEventListener('click', () => {
 });
 
 document.getElementById('return').addEventListener('click', () => {
-    location.replace('../home/index.html');
+    location.replace('../home/home.html');
 });
 
 mg[2].addEventListener('click', () => {
