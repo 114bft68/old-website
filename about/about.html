@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="upperBar">
+        <button class="select">Creations</button><button class="select">About this Website</button>
+        <div style="width: calc(71vw - 12.5vh);"></div>
+        <button id="return"><img id="home" style="height: 8vh; width: 8vh;" src="../images/home.svg"></button>
+        <div id="buttonList">
+            <button class="creations">Tac Tac Toe</button>
+            <button class="creations">Cubes Dodging</button>
+            <button class="creations">Bouncing Balls<img src="../images/external.svg" style="padding-left: 5px"></button>
+        </div>
+    </div>
+    <div style="padding: 15px; box-sizing: border-box; height: 87.5vh; text-align: center; display: flex; align-items: center; justify-content: center;">
+        <p style="font-size: 50px; max-height: 87.5vh;">I want to say nothing.<br></p>
+    </div>
+    <script src="../common.js"></script>
+    <script>
+        const target = document.getElementsByTagName('p')[0];
+        const text = 'Oh wait... did you just set this place on fire?';
+        let i = 0;
+
+        type(text, '', text.length, '<br>', () => {
+            type('', '\u{1F525}', 100 + text.length, '\u{26fd}', () => {
+                setTimeout(() => {
+                    target.innerHTML += '<br>Game over... \u{26fd}\u{1F525}\u{1f4a5}';
+                }, 1000);
+            });
+        });
+
+        function type(text0, text1, finallength, text2, furtherActions) {
+            setTimeout(() => {
+                let interval = setInterval(() => {
+                    target.innerHTML += text0[i] || text1;
+                    i++;
+                    if (i === finallength) {
+                        clearInterval(interval);
+                        target.innerHTML += text2;
+                        furtherActions();
+                    }
+                }, 100);
+            }, 1000);
+        }
+    </script>
+</body>
+</html>

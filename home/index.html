@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="upperBar">
+        <button class="select">Creations</button><button class="select">About this Website</button>
+        <div style="width: calc(71vw - 12.5vh);"></div>
+        <button id="return"><img id="home" style="height: 8vh; width: 8vh;" src="../images/home.svg"></button>
+        <div id="buttonList">
+            <button class="creations">Tac Tac Toe</button>
+            <button class="creations">Cubes Dodging</button>
+            <button class="creations">Bouncing Balls<img src="../images/external.svg" style="padding-left: 5px"></button>
+        </div>
+    </div>
+    <svg style="height: 87.5vh; width: 100vw; padding: 0; margin: 0; position: absolute;">
+        <polyline id="polyline" fill="#bdbca8">
+    </svg>
+    <div id="text">
+        <h1 style="font-size: 65px; white-space: nowrap;">Welcome to My Website</h1>
+        <p id="id" style="margin-bottom: 5vh;">SEMI-ABANDONED &#40I'm just lazy&#41</p>
+        <p id="hello" style="font-size: 30px;"></p>
+    </div>
+    <script src="../common.js"></script>
+    <script src="main.js"></script>
+    <script>
+        function checkMobile() {
+            try {
+                document.createEvent('TouchEvent');
+                return true;
+            } catch {
+                return false;
+            }
+        }
+
+        if (checkMobile()) {
+            alert('\u26A0\uFE0F This website is HIGHLY MOBILE-UNFRIENDLY \u26A0\uFE0F');
+        }
+    </script>
+</body>
+</html>
