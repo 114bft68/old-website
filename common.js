@@ -12,16 +12,16 @@ document.head.appendChild(link);
 const mg = document.querySelectorAll('.creations');
 for (let i = 0; i < 2; i++) {
     mg[i].addEventListener('click', () => {
-        location.replace((i === 0 ? '../tic tac toe/tic_tac_toe' : i === 1 ? '../cubes dodging/cubes_dodging' : void(0)) + '.html');
+        location.replace('../website/' + (i === 0 ? 'tic tac toe/tic_tac_toe' : i === 1 ? 'cubes dodging/cubes_dodging' : void(0)) + '.html');
     }); // (switch... case) when there are more options
 }
 
 document.querySelectorAll('.select')[1].addEventListener('click', () => {
-    location.replace('../about/about.html');
+    location.replace('../website/about/about.html');
 });
 
 document.getElementById('return').addEventListener('click', () => {
-    location.replace('../home/home.html');
+    location.replace('../website/home/home.html');
 });
 
 mg[2].addEventListener('click', () => {
