@@ -1,2 +1,2 @@
-a website that's HIGHLY MOBILE-UNFRIENDLY\
+this website is highly mobile-unfriendly\
 https://114bft68.github.io/website
