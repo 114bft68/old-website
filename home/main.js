@@ -37,7 +37,7 @@ setInterval(() => {
 
 async function fetchLastUpdated() {
     try {
-        let response = await fetch('https://api.github.com/repos/114bft68/website');
+        let response = await fetch('https://api.github.com/repos/114bft68/old-website');
         let r = await response.json();
         let ms = new Date() - new Date(r.updated_at).getTime();
         if (ms !== '') {
